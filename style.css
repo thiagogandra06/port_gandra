@@ -1,0 +1,130 @@
+
+body {
+    font-family: "Cal Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    width: 793px;  /* Largura A4 */
+    height: 1122px; /* Altura A4 */
+    /*margin: 0 auto;  Centraliza o conteúdo na tela */
+    background-color: white;
+    border: 1px solid #000; /* Borda para representar a folha A4 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+}
+
+nav {
+    width: 100%;
+    background-color: #8E58A6;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #0d0d0d;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #7c4a7b;
+  } 
+  
+.imagem-redonda{
+    width: 200px; /* Largura */
+    height: 200px; /* Altura */
+    object-fit: cover; /* Proporção da Imagem */
+    border-radius: 50%; 
+    padding: 5px;
+    
+}
+
+h1 {  
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Container Principal*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.esquerda { 
+    background-color: #8E58A6; 
+    width: 30%;
+    height: 100%;
+    padding: 15px;
+    color: #ffffff; 
+    font-size: 14px;
+}
+
+.container1 {
+    padding: 15px;
+    color: white;
+    display: flex;               
+    justify-content: center;   
+    align-items: center; 
+}
+
+.container2 {
+    padding: 15px;
+    color: white;
+}
+
+.direita {
+    padding: 15px;
+    background-color: #ffffff; 
+    width: 70%;
+    height: 100%;
+    color: #8E58A6; 
+}
+
+@media (max-width: 768px) {
+    body {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    }
+    
+    .container {
+    flex-direction: column;
+    }
+    
+    .esquerda,
+    .direita {
+    width: 100%;
+    height: auto;
+    }
+    
+    .imagem-redonda {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    }
+    
+    h1 {
+    font-size: 20px;
+    }
+    
+    .esquerda,
+    .direita,
+    .container1,
+    .container2 {
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    }
+    }

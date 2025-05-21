@@ -1,36 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Aula 01</title>
-    <link rel="stylesheet" href="estilo.css">
+    <style>/*Criar uma linha com preenchimento, peguei da net*/
+        .linha-base {
+          width: 100%;         /* largura total */
+          height: 5px;        /* altura da linha */
+          background-color: #ffffff; /* cor de fundo (linha "vazia") */
+          border-radius: 5px;
+          overflow: hidden;    /* garante que o preenchimento não ultrapasse */
+        }
+    
+        .preenchimento {
+          width: 50%;              /* Preenchimento LAteral */
+          height: 100%;            
+          background-color: #8f58a675; /* cor do preenchimento */
+        }
+      </style>
+    <title>Currículo</title>
 </head>
 <body>
-  <nav>
-    <a href="file:///C:/Users/Gandra/Desktop/IFMG/Programa%C3%A7%C3%A3o/HTML/PORTIFOLIO/index.html#inicio">Início</a>
-    <a href="file:///C:/Users/Gandra/Desktop/IFMG/Programa%C3%A7%C3%A3o/HTML/CURRICULO/index.html">Currículo</a>
-  </nav>
+    <nav>
+        <a href="file:///C:/Users/Gandra/Desktop/IFMG/Programa%C3%A7%C3%A3o/HTML/PORTIFOLIO/index.html#curriculo">Início</a>
+        <a href="file:///C:/Users/Gandra/Desktop/IFMG/Programa%C3%A7%C3%A3o/HTML/CURRICULO/index.html">Currículo</a>
+      </nav>
 
-  <div class="container">
-    <div class="text-box">
-      <h1>Seja Bem-Vindo <br> ao meu Portfólio Acadêmico!</h1>
-      <p>Olá! Me chamo Thiago Gandra, tenho 18 anos e sou apaixonado por criatividade e tecnologia. Atuo como Designer, Social Media e Editor de Vídeo, além de cursar Engenharia de Controle e Automação no IFMG – Campus Ibirité.
-        Aqui você encontra um pouco do meu trabalho, ideias e projetos!</p>
-      <div class="buttons">
-        <a href="https://www.instagram.com/thiagogandraa/#" class="btn">Instagram</a>
-        <a href="https://wa.me/+5531980249330" class="btn">WhatsApp</a>
-      </div>
+    <div class="container">
+        <div class="coluna esquerda">
+            <div class="container1">
+                <img src="IMG/imagem.jpeg" class="imagem-redonda">
+            </div>
+            <div class="container2">
+                <h2>Objetivo</h2>
+                <p>Busco uma oportunidade desafiadora onde minhas habilidades em design gráfico e edição de vídeo possam agregar valor à criação de conteúdo visual impactante e criativo, contribuindo para o sucesso dos projetos e o crescimento da equipe.</p>
+                <h2>Dados Pessoais</h2>
+                <p>Naturalidade:<br>Nova Lima - MG</p>
+                <p>Nacionalidade:<br>Brasileiro</p>
+                <p>Nascimento:<br>09/06/2006</p>
+                <p>Estado Civil:<br>Solteiro</p>
+                <p>Sexo:<br>Masculino</p>
+                <h2>Idiomas</h2>
+                <p>Inglês</p>
+                <div class="linha-base">
+                    <div class="preenchimento"></div>
+                </div>
+                <h2>Habilidades</h2>
+                <p>Cooperação</p>
+                <div class="linha-base">
+                    <div class="preenchimento" style="width: 90%; height: 100%;"></div>
+                </div>
+                <p>Trabalho em Equipe</p>
+                <div class="linha-base">
+                    <div class="preenchimento" style="width: 75%; height: 100%;"></div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="coluna direita">
+            <h2>Thiago Martins Cardozo Gandra</h2>
+            <p>thiagogandra06@gmail.com<br>(31)98024-9330<br>Rua Janaúba, 16 Capelinha - Betim</p>
+            <h2>Formação Acadêmica</h2>
+            <p>Ensino Fundamental - Escola Estadual do Bairro Amazonas (Betim | MG) - 2020 <br>
+            Ensino Médio - Escola Estadual do Bairro Amazonas (Betim | MG) - 2023 <br>
+            Técnico Automação Industrial - Serviço Nacional de Aprendizagem Industrial (SENAI) - 2024 </p>
+            <h2>Experiências Profissionais</h2>
+            <p>(2019-2024) Vendedor Autonômo: Roupas, Sapatos, Acéssorios, Celulares entre outros.
+                <br>(2024-2025) Prestador de Serviço: Social Media, Edição de Vídeo e Design.
+            </p>
+            <h2>Informações Complementares</h2>
+            <p>Cursos:</p>
+            <p>Vivendo de iPhone - Mister Ins<br>Curso de WordPress - Descomplicando Sites
+            <br>Nômade Legacy - Thiango Finch<br>Comunidade Sobral de Tráfego - Pedro Sobral</p>
+
+        </div>
     </div>
-    <div class="image-box">
-      <div class="image-border">
-        <img src="IMG/imagem.jpeg" class="recorte">
-      </div>
-    </div>
-  </div>
 </body>
 </html>
